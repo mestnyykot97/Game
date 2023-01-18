@@ -1,0 +1,59 @@
+.content {    
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset_game {
+    width: 246px;
+    height: 50px;
+    background: #7AC100;
+    border-radius: 12px;
+    font-family: 'StratosSkyeng';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    color: #FFFFFF;
+    margin-top: 52px;
+    margin-right: 22px;
+}
+
+.time {
+    width: 155px;
+    height: 72px;
+    margin-left: 22px;
+    margin-top: 41px;
+    font-family: 'StratosSkyeng';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+
+.tenB {
+    width: 17.11px;
+    height: 25.58px;
+    left: 33px;
+    top: 80px;
+    background: #C4C4C4;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.tenK {
+    width: 17.11px;
+    height: 25.58px;
+    left: 33px;
+    top: 80px;
+    background: #C4C4C4;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.cards{
+    width: 1024px;
+    height: 640px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-left: 22px;
+}
