@@ -112,6 +112,7 @@ span {
   background: #c2f5ff;
   border-radius: 12px;
   margin-left: 272px;
+  padding-top: 20px;
 }
 .game__title {
   font-family: "StratosSkyeng";
@@ -119,8 +120,8 @@ span {
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
-  margin-top: 52px;
-  margin-left: 150px;
+  margin-top: 30px;
+  margin-left: 120px;
   color: #004980;
 }
 .game__button {
@@ -166,6 +167,9 @@ span {
   color: #0080c1;
 }
 
+/*.button:active  {
+    border: 3px solid green;
+}*/
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -183,6 +187,10 @@ span {
   font-size: 64px;
   line-height: 72px;
   color: #ffffff;
+}
+
+.num {
+  color: #000000;
 }
 
 .time-pad {
@@ -206,4 +214,32 @@ span {
 .btn {
   margin-top: 45px;
   margin-left: 550px;
+}
+
+.span-time {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.time__title {
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.img__win {
+  display: flex;
+  justify-content: center;
+}
+
+.div__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */
