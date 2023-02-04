@@ -25,4 +25,3 @@ btnStart.addEventListener('click', () => {
         console.log('Что-то пошло не так');
     }
 });
-

@@ -4,17 +4,17 @@
 }
 
 @font-face {
-    font-family: StratosSkyeng;
+    font-family: 'StratosSkyeng', sans-serif;
     font-style: normal;
     src: local('StratosSkyeng'),
-        url('./fonts/stratosskyengweb-regular.woff') format('woff');
+    url('./fonts/stratosskyengweb-regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: StratosSkyeng;
+    font-family: 'StratosSkyeng', sans-serif;
     font-style: normal;
     src: local('StratosSkyeng'),
-        url('./fonts/stratosskyengweb-regular.woff2') format('woff2');
+    url('./fonts/stratosskyengweb-regular.woff2') format('woff2');
 }
 
 span {
@@ -44,7 +44,7 @@ span {
     }
 
     &__title {
-        font-family: 'StratosSkyeng';
+        font-family: 'StratosSkyeng', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 40px;
@@ -73,8 +73,8 @@ span {
         background: #7ac100;
         border-radius: 12px;
         border: none;
-        color: #ffffff;
-        font-family: 'StratosSkyeng';
+        color: #fff;
+        font-family: 'StratosSkyeng', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
@@ -84,16 +84,16 @@ span {
 #radioButton {
     width: 80px;
     height: 80px;
-    background: #ffffff;
+    background: #fff;
 }
 
 .button {
     width: 98px;
     height: 98px;
-    background: #ffffff;
+    background: #fff;
     border-radius: 12px;
     border: none;
-    font-family: 'StratosSkyeng';
+    font-family: 'StratosSkyeng', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
@@ -109,12 +109,12 @@ span {
 }
 
 .number {
-    font-family: 'StratosSkyeng';
+    font-family: 'StratosSkyeng', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
     line-height: 72px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .time-pad {
@@ -125,13 +125,13 @@ span {
 }
 
 .unit-time {
-    font-family: 'StratosSkyeng';
+    font-family: 'StratosSkyeng', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
     font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #ffffff;
+    color: #fff;
     padding-left: 61px;
 }
 
