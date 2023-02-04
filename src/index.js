@@ -1,3 +1,7 @@
+import('./style.scss');
+import img from './img/cardFaceDown.jpg';
+import ImgCards from './frontFacesCard';
+
 const app = document.querySelector('.app');
 
 window.application = {
@@ -86,6 +90,8 @@ function renderStartBlock(container) {
         });
     });
 
+    let numberOfCards;
+
     btnStart.addEventListener('click', () => {
         window.application.renderScreen('gameField');
         const level = window.application.level;
@@ -165,11 +171,11 @@ function renderGameFieldBlock(container) {
         divCards.appendChild(divCardsImage);
 
         const imgFront = document.createElement('img');
-        imgFront.src = 'img/picture/' + arrCard[i] + '.jpg';
+        imgFront.src = ImgCards[arrCard[i] - 1];
         imgFront.classList.add('front-face');
 
         const imgBack = document.createElement('img');
-        imgBack.src = 'img/cardFacedown.jpg';
+        imgBack.src = img;
         imgBack.classList.add('back-face');
 
         divCardsImage.appendChild(imgFront);
@@ -188,7 +194,7 @@ function renderGameFieldBlock(container) {
             }
         };
 
-        cards.forEach((card) => {
+        cards.forEach(() => {
             setTimeout(() => flipCard(), 300);
             setTimeout(() => {
                 divCardsImage.classList.remove('flip');
@@ -198,9 +204,10 @@ function renderGameFieldBlock(container) {
 
     const cards = document.querySelectorAll('.cards__image');
     let hasFlippedCard = false;
-    let firstCard, secondCard;
 
     const flipCardClick = (event) => {
+        let firstCard;
+        let secondCard;
         const target = event.target.parentElement;
         console.log(target);
         target.classList.add('flip');
@@ -235,7 +242,6 @@ function renderGameFieldBlock(container) {
                     compared[0].attributes.src.nodeValue ===
                     compared[1].attributes.src.nodeValue
                 ) {
-                    console.log('Вы выиграли');
                     compared = [];
 
                     console.log(compared);
@@ -283,8 +289,8 @@ function renderHeaderBlock(container) {
     divTimerWorld.appendChild(spanMin);
 
     const spanSec = document.createElement('span');
-    spanMin.classList.add('unit-time');
-    spanMin.textContent = 'sec';
+    spanSec.classList.add('unit-time');
+    spanSec.textContent = 'sec';
     divTimerWorld.appendChild(spanSec);
 
     const spanNum = document.createElement('span');
@@ -310,4 +316,3 @@ function renderGameFieldScreen() {
 
 window.application.screens['gameField'] = renderGameFieldScreen;
 //вызываем в btmStart click
-// логика переворота карты
