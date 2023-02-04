@@ -52,14 +52,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Lika-2020/cardGameLocal.git"
+        "url": "git+https://github.com/mestnyykot97/Game.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/Lika-2020/cardGameLocal/issues"
+        "url": "https://github.com/mestnyykot97/Game/issues"
     },
-    "homepage": "https://github.com/Lika-2020/cardGameLocal#readme",
+    "homepage": "https://github.com/mestnyykot97/Game#readme",
     "description": "",
     "jest": {
         "verbose": true,
