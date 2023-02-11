@@ -1,0 +1,132 @@
+/* stylelint-disable declaration-colon-newline-after */
+/* stylelint-disable font-family-name-quotes */
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
+/* stylelint-disable no-missing-end-of-source-newline */
+@font-face {
+  font-family: "StratosSkyeng";
+  src: url("../static/fonts/stratosskyengweb-regular.woff") format("woff"),
+    url("../static/fonts/stratosskyengweb-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 364px);
+  padding-right: calc(50% - 364px);
+}
+
+.app {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: "StratosSkyeng";
+  background-color: #004980;
+  width: 1024px;
+  height: 774px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 25%;
+  text-align: -webkit-center;
+}
+
+.choice_level {
+  width: 480px;
+  height: 459px;
+  background: #c2f5ff;
+  border-radius: 12px;
+  position: absolute;
+  margin-left: 272px;
+  margin-top: 157px;
+}
+
+.title {
+  width: 208px;
+  height: 96px;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #004980;
+  padding-top: 52px;
+}
+
+.easy,
+.normal,
+.hard {
+  width: 97px;
+  height: 98px;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: #0080c1;
+  background: white;
+  border-radius: 12px;
+  border: none;
+}
+
+.easy:hover {
+  background: #bc99e7;
+}
+
+.normal:hover {
+  background: #bc99e7;
+}
+
+.hard:hover {
+  background: #bc99e7;
+}
+
+.color {
+  background: #bc99e7;
+}
+
+.level {
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+  gap: 32px;
+}
+
+.start {
+  width: 246px;
+  height: 50px;
+  background: gray;
+  border-radius: 12px;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: white;
+  margin-top: 67px;
+  border: none;
+}
+
+.start_active {
+  background: #7ac100;
+}
+
+.cards {
+  width: 700px;
+  height: 640px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+}
