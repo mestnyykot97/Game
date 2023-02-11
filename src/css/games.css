@@ -1,0 +1,81 @@
+/* stylelint-disable font-family-name-quotes */
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reset_game {
+  width: 246px;
+  height: 50px;
+  background: #7ac100;
+  border-radius: 12px;
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  font-feature-settings: "pnum"on, "lnum"on;
+  color: white;
+  margin-top: 52px;
+  margin-right: 22px;
+}
+
+.time {
+  width: 155px;
+  height: 72px;
+  margin-left: 22px;
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: white;
+}
+
+.front,
+.back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.ten {
+  width: 90px;
+  height: 130px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.back_rotate {
+  transform: rotateY(180deg);
+  transition-duration: 0.05s;
+}
+
+.mins,
+.sek {
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #fff;
+}
+
+.minsek {
+  display: flex;
+  padding-left: 58px;
+  gap: 58px;
+  height: 20px;
+}
+
+.infotime {
+  padding-top: 22px;
+}

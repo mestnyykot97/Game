@@ -1,0 +1,67 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+/* stylelint-disable no-missing-end-of-source-newline */
+/* stylelint-disable CssSyntaxError */
+.win-lose {
+  padding-top: 30px;
+  padding-bottom: 28px;
+}
+
+.win_lose_screen {
+  width: 480px;
+  height: 459px;
+  background: #c2f5ff;
+  border-radius: 12px;
+  position: absolute;
+  margin-left: 272px;
+  margin-top: 157px;
+}
+
+.game_time {
+  width: 155px;
+  height: 72px;
+  margin-left: 22px;
+  margin-top: 10px;
+  font-family: StratosSkyeng;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: black;
+}
+
+.title-win {
+  font-family: StratosSkyeng;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #004980;
+}
+
+.timeinfo {
+  font-family: StratosSkyeng;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000;
+}
+
+.gameAgaint {
+  width: 246px;
+  height: 50px;
+  background: #7ac100;
+  border-radius: 12px;
+  border-color: #7ac100;
+  font-family: StratosSkyeng;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 40px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #fff;
+  border: none;
+}
