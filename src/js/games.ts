@@ -627,22 +627,24 @@ function renderHardBlock() {
         }
     }
     setTimeout(() => {
-  rotateCards(arrBack)
-  application.cardsScreen.addEventListener("click", (event: MouseEvent) => {
-      const target = event.target as HTMLElement
-            
-      if (target.tagName === "IMG") {
-          target.classList.add("back_rotate")
-          application.idCards.push(target.id)
-      } else if(target.tagName !== "IMG"){
-      console.log("Это не картинка") //Доработать
-      }
-      if (application.idCards.length === 2) {
-          comparison()
-      }
-       return true  // Возвращаем true, чтобы не возникало ошибки в консоли
-  })
-}, 5000)
+        rotateCards(arrBack)
+        application.cardsScreen.addEventListener("click", (event: MouseEvent) => {
+            const target = event.target as HTMLElement
+                  
+            if (target.tagName === "IMG") {
+                target.classList.add("back_rotate")
+                application.idCards.push(target.id)
+            } else if(target.tagName !== "IMG"){
+            console.log("Это не картинка") //Доработать
+            }
+            if (application.idCards.length === 2) {
+                comparison()
+            }
+             return true; // Возвращаем true, чтобы не возникало ошибки в консоли
+        })
+        console.log(application.idCards)
+      }, 5000)
+}
 
 function comparison() {
     if (application.idCards[0] === application.idCards[1]) {
@@ -684,4 +686,4 @@ function renderHardGameScreen() {
     application.renderBlock("hard_block")
     application.hardLevelScreen()
 }
-application.screens["render_hard_game"] = renderHardGameScreen
+application.screens["render_hard_game"] = renderHardGameScreen 
