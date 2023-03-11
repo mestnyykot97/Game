@@ -10,6 +10,7 @@ import './lose';
 
 //Отрисовка первого блока
 function renderChoiceLevel() {
+  
   const choice = document.createElement("div")
   choice.classList.add("choice_level")
   const title = document.createElement("h1")
@@ -37,6 +38,7 @@ function renderChoiceLevel() {
   choice.appendChild(level)
   choice.appendChild(startButton)
   application.container.appendChild(choice)
+  
   level.addEventListener("click", (event: MouseEvent) => {
     const target = event.target as HTMLButtonElement
     if (target.tagName === "BUTTON") {
